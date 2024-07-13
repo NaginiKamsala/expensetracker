@@ -1,0 +1,171 @@
+.main-div {
+  background-color: black;
+
+  border-radius: 10px;
+  opacity: 0px;
+}
+h1 {
+  color: white;
+  font-size: 23px;
+  font-weight: bold;
+  padding: 20px 20px 0px 20px;
+}
+.second-div {
+  background-color: black;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 0px 20px 20px 20px;
+}
+.recent-expenses {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.div1 {
+  background: #626262;
+
+  height: 45vh;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  align-items: center;
+  padding: 10px 10px 10px 20px;
+}
+.walletbalance {
+  background: #9b9b9b;
+
+  padding: 20px;
+  border-radius: 20px;
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 150px;
+  width: 400px;
+}
+.incomebtn {
+  background: linear-gradient(90deg, #b5dc52 0%, #89e148 100%);
+  color: antiquewhite;
+  padding: 10px;
+
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18.38px;
+  text-align: left;
+
+  border-radius: 10px;
+  border: none;
+  height: 38px;
+}
+.expensebtn {
+  background: linear-gradient(90deg, #ff9595 0%, #ff4747 80%, #ff3838 100%);
+
+  color: antiquewhite;
+  padding: 10px;
+
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18.38px;
+  text-align: left;
+
+  border-radius: 10px;
+  border: none;
+  height: 38px;
+}
+.expenses-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+}
+.div2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+}
+.pienames {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.rectangle1 {
+  width: 26px;
+  height: 8px;
+  top: 339px;
+  left: 949px;
+  gap: 0px;
+  opacity: 0px;
+  background: #a000ff;
+}
+.rectangle2 {
+  width: 26px;
+  height: 8px;
+  top: 339px;
+  left: 949px;
+  gap: 0px;
+  opacity: 0px;
+  background: #ff9304;
+}
+.rectangle3 {
+  width: 26px;
+  height: 8px;
+  top: 339px;
+  left: 949px;
+  gap: 0px;
+  opacity: 0px;
+  background: #fde006;
+}
+.expensesummary {
+  display: flex;
+  flex-direction: column;
+}
+.barchart {
+  background: #ffffff;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  border-radius: 15px;
+}
+.transactions {
+  background: #ffffff;
+}
+.expenselist {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.inputfields {
+  width: 223px;
+  height: 51px;
+  top: 347px;
+  left: 401px;
+  gap: 0px;
+  border-radius: 15px 0px 0px 0px;
+  opacity: 0px;
+
+  background: linear-gradient(0deg, #d9d9d9, #d9d9d9);
+
+  color: #919191;
+}
+
+.addExpense {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.462);
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  z-index: 999;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
