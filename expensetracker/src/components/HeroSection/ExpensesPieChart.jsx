@@ -45,7 +45,7 @@ function PieChartComponent({ expenses }) {
   }
 
   return (
-    <div className={styles.pie_chart_section_wrapper}>
+    <div className={styles.pie_chart_section}>
       <ResponsiveContainer width="100%" height={240}>
         <PieChart width={400} height={400}>
           <Pie

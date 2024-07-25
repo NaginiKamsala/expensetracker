@@ -1,6 +1,6 @@
 import image from "./assets/Logo.svg";
 import { SnackbarProvider } from "notistack";
-import ExpenseTracker from "./components/expensetracker";
+
 import Home from "./components/Pages/Home/Home";
 import "./App.css";
 
