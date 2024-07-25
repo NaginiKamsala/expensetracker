@@ -98,7 +98,7 @@ const AddEditExpenseModal = ({
           enqueueSnackbar("Price should not exceed the wallet balance", {
             variant: "warning",
           });
-
+          console.log("hello");
           setInputData({
             title: "",
             price: "",
