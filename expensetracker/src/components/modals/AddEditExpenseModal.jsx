@@ -4,16 +4,6 @@ import Modal from "@mui/material/Modal";
 import styles from "./AddEditExpenseModal.module.css";
 import { useSnackbar } from "notistack";
 
-/**
- * ExpenseModal for add expense and edit expense components
- * @param {string} title
- * Add Expense or Edit Expense
- * @param {boolean} isNew
- * true if add new expense and false if edit already exist expense
- * @param {object} editExpenseData
- * already present data of expense which we wan't to edit
- * @returns
- */
 const AddEditExpenseModal = ({
   isOpen,
   setIsOpen,
