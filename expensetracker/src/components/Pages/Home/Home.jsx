@@ -2,8 +2,8 @@ import { useState, useEffect, createContext } from "react";
 import Navbar from "../../Navbar/Navbar";
 import HeroSection from "../../HeroSection/HeroSection";
 import AllTransactions from "../../Transactions/AllTransactions";
-import AddIncomeModal from "../../modals/AddIncomeModal";
-import AddEditExpenseModal from "../../modals/AddEditExpenseModal";
+import AddIncomeModal from "../../Modals/AddIncomeModal";
+import AddEditExpenseModal from "../../Modals/AddEditExpenseModal";
 
 const useLocalStorage = (key, initialValue) => {
   const [storedValue, setStoredValue] = useState(() => {
