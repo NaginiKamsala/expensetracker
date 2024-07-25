@@ -8,7 +8,7 @@ import { TbDotsCircleHorizontal } from "react-icons/tb";
 import { SlPencil } from "react-icons/sl";
 import { BsArrowLeft } from "react-icons/bs";
 import { BsArrowRight } from "react-icons/bs";
-import AddEditExpenseModal from "../Modals/AddEditExpenseModal";
+import AddEditExpenseModal from "../Modalpopup/AddEditExpenseModal";
 
 const PaginationComp = ({ updatePage, currentPage, totalPages }) => {
   const handlePrevPage = () => {
