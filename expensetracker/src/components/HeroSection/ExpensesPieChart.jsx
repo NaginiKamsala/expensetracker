@@ -1,12 +1,6 @@
 import React, { PureComponent } from "react";
-import { PieChart, Pie, Sector, Cell, ResponsiveContainer } from "recharts";
-
-const data = [
-  { name: "Group A", value: 400 },
-  { name: "Group B", value: 300 },
-  { name: "Group C", value: 300 },
-  { name: "Group D", value: 200 },
-];
+import { PieChart, Pie, Cell, ResponsiveContainer, Legend } from "recharts";
+import styles from "./ExpensesPieChart.module.css";
 
 const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042"];
 
@@ -25,19 +19,34 @@ const renderCustomizedLabel = ({
   const y = cy + radius * Math.sin(-midAngle * RADIAN);
 
   return (
-    <text x={x} y={y} fill="white" textAnchor={x > cx ? "start" : "end"}>
+    <text
+      x={x}
+      y={y}
+      fill="white"
+      textAnchor={x > cx ? "start" : "end"}
+      dominantBaseline="central"
+    >
       {`${(percent * 100).toFixed(0)}%`}
     </text>
   );
 };
 
-export default class Example extends PureComponent {
-  static demoUrl =
-    "https://codesandbox.io/s/pie-chart-with-customized-label-dlhhj";
+function PieChartComponent({ expenses }) {
+  const data = [
+    { name: "Food", value: expenses.food },
+    { name: "Entertainment", value: expenses.entertainment },
+    { name: "Travel", value: expenses.travel },
+    { name: "Other", value: expenses.other },
+  ];
 
-  render() {
-    return (
-      <ResponsiveContainer width={400} height={400}>
+  const spendAll = data.reduce((acc, obj) => acc + obj.value, 0);
+  if (spendAll === 0) {
+    return <div className={styles.pie_chart_section}>No transactions!</div>;
+  }
+
+  return (
+    <div className={styles.pie_chart_section_wrapper}>
+      <ResponsiveContainer width="100%" height={240}>
         <PieChart width={400} height={400}>
           <Pie
             data={data}
@@ -56,8 +65,11 @@ export default class Example extends PureComponent {
               />
             ))}
           </Pie>
+          <Legend iconType="rect" verticalAlign="bottom" />
         </PieChart>
       </ResponsiveContainer>
-    );
-  }
+    </div>
+  );
 }
+
+export default PieChartComponent;

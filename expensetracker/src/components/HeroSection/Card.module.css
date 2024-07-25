@@ -1,0 +1,82 @@
+.card_body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #9b9b9b;
+  border-radius: 15px;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  box-sizing: border-box;
+
+  gap: 19px;
+  height: 180px;
+  width: 356px;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 400;
+  color: var(--color-white);
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.expense_text {
+  color: #f4bb4a;
+  font-weight: 700;
+}
+
+.income_text {
+  color: #9dff5b;
+  font-weight: 700;
+}
+
+.button {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-white);
+  border: none;
+  border-radius: 15px;
+  height: 38px;
+  width: 168px;
+  cursor: pointer;
+}
+
+.income_button {
+  background: linear-gradient(90deg, #b5dc52 0%, #89e148 100%);
+}
+
+.expense_button {
+  background: linear-gradient(90deg, #ff9595 0%, #ff4747 80%, #ff3838 100%);
+}
+
+@media screen and (max-width: 1100px) {
+  .card_body {
+    gap: 16px;
+    height: 150px;
+    width: 300px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .button {
+    font-size: 14px;
+    height: 32px;
+    width: 142px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .card_body {
+    gap: 13px;
+    height: 120px;
+    width: 240px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+}

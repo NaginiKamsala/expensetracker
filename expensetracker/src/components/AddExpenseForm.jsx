@@ -8,15 +8,16 @@ const AddExpenseForm = ({
   setisAddExpense,
   setExpenseList,
   expenseList,
+  balance,
+  setBalance,
 }) => {
-  const { balance, setBalance } = useContext(WalletContext);
-
   const [title, setTitle] = useState("");
   const [amount, setAmount] = useState("");
   const [category, setCategory] = useState("");
   const [date, setDate] = useState("");
   const { enqueueSnackbar } = useSnackbar();
   let expenseMoney = localStorage.getItem("ExpenseAmount");
+
   const handleSubmit = (e) => {
     e.preventDefault();
     const expenseAmount = parseFloat(amount);
